@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  @include PM;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $color-body-bg;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+.main {
+  width: 100%;
+  flex-grow: 1;
+  margin-top: 9.6rem;
+}

@@ -1,0 +1,217 @@
+.main {
+  background: $color-white;
+}
+img {
+  vertical-align: 0 !important;
+}
+.about {
+  display: flex;
+  background-image: url(../../images/jpn/About.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 12rem;
+  .container {
+    h1 {
+      padding: 7.2rem 0;
+      @include hero-h1;
+    }
+  }
+}
+
+.mobility {
+  background-image: url(../../images/svg/doira.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10.9rem, 73.4rem;
+  background-position-x: 100%;
+  background-position-y: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.7rem;
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+  .boxs {
+    width: 44.5rem;
+  }
+  .wrap {
+    @include easy-h2;
+  }
+  .decription {
+    @include easy-p;
+  }
+
+  .images {
+    img {
+      border-radius: 50%;
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+    .hover {
+      border-radius: 0;
+      top: 11rem;
+      right: 8rem;
+      position: absolute;
+      width: 73.5rem;
+      height: 13.9 rem;
+    }
+  }
+}
+
+.better {
+  background-image: url(../../images/svg/left\ doira.svg);
+  background-repeat: no-repeat;
+  // background-size: 7.5%;
+  background-position: center;
+  background-position-x: -32rem;
+  background-position-y: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.8rem;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+  .boxs {
+    width: 44.5rem;
+  }
+  .wrap {
+    @include easy-h2;
+  }
+  .decription {
+    @include easy-p;
+  }
+
+  .images {
+    img {
+      border-radius: 50%;
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+    .hover {
+      border-radius: 0;
+      top: 0.7rem;
+      left: -10.5rem;
+      position: absolute;
+      width: 73.5rem;
+      height: 13.8rem;
+    }
+  }
+}
+
+.vales {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 12rem;
+    h2 {
+      @include easy-h2;
+      margin-bottom: 10.3rem;
+      //   margin-bottom: 3.7rem;
+    }
+  }
+  .vales__list {
+    display: flex;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      h4 {
+        @include our-h4;
+        margin-bottom: 2.7rem;
+      }
+      p {
+        width: 35rem;
+        @include global-p;
+      }
+      .oval {
+        border-radius: 50%;
+        width: 25rem;
+      }
+      .span::before {
+        content: "01";
+        @include span;
+        @include our-h4;
+      }
+      .span2::before {
+        content: "02";
+        @include span;
+        @include our-h4;
+      }
+      .span3::before {
+        content: "03";
+        @include span;
+        @include our-h4;
+      }
+    }
+  }
+}
+
+.faqs {
+  .container {
+    margin-bottom: 16rem;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    h2 {
+      @include easy-h2;
+      margin-bottom: 6.4rem;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .bloks {
+    padding-top: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      @include faq-h3;
+      padding-top: 0.5rem;
+    }
+  }
+  .ocardions__list {
+    .item {
+      display: flex;
+      flex-direction: column;
+      padding: 3.2rem 4rem;
+      width: 73rem;
+      background: $color-snow;
+      margin-bottom: 1.6rem;
+      img {
+        width: 1.6rem;
+        height: 0.8rem;
+      }
+      p {
+        @include global-p;
+        margin-top: 2.4rem;
+      }
+      h4 {
+        @include our-h4;
+      }
+      &:active {
+        background: $color-light-yellow;
+      }
+    }
+    .how {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

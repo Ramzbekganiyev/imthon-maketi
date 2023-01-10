@@ -1,0 +1,28 @@
+.footer {
+  height: 9.6rem;
+  padding: 3.5rem 0 3.25rem;
+  background: $footer-bg-color;
+  width: 100%;
+  .container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mesenger {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .mesengers:active {
+    path {
+      fill: $color-logobg-gray;
+    }
+  }
+
+  .images {
+    // width: 10.8rem;
+    height: 2.9rem;
+    margin-right: 5.9rem;
+  }
+}

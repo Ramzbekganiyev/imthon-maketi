@@ -1,0 +1,28 @@
+// header
+.navbar {
+  width: 100%;
+  display: flex;
+  margin-right: auto;
+  justify-content: space-between;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  &__list {
+    display: flex;
+    gap: 3.2rem;
+  }
+  &__item {
+    &-link {
+      font-family: $font-space-mono;
+      color: $link-color;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      &:hover,
+      &:active {
+        color: $color-oval-yellow;
+        border-bottom: none;
+        text-decoration: none;
+      } //   padding: 2rem;
+    }
+  }
+}

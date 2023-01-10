@@ -1,0 +1,18 @@
+.btn {
+  padding: $btn-padding;
+  background: $color-oval-yellow;
+  border: 3px solid $color-oval-yellow;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+
+  &:hover {
+    background-color: $color-white;
+
+    color: $color-oval-yellow;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

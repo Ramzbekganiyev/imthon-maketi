@@ -1,0 +1,278 @@
+.hero {
+  //   background-color: black;
+  width: 100%;
+  // height: 100%;
+  background-image: url(../images/jpn/Bitmap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15.3rem 0;
+  position: relative;
+
+  .wrap {
+    margin-bottom: 4rem;
+    @include hero-h1;
+  }
+  .hero__info {
+    &-blok {
+      padding-left: 10rem;
+      width: 47%;
+      p {
+        margin-bottom: 5.6rem;
+        @include hero-p;
+      }
+      .hover {
+        border-radius: 0;
+        top: 34.8rem;
+        right: 8em;
+        position: absolute;
+        width: 73.5rem;
+        height: 13.8rem;
+        border-radius: 0;
+      }
+    }
+    .hovers {
+      border-radius: 0;
+      top: 35.1rem;
+      left: -19rem;
+      position: absolute;
+      width: 55.5rem;
+      height: 1.5rem;
+      border-radius: 0;
+    }
+  }
+  //   .btn {
+  //     // @include tn;
+  //   }
+}
+
+.cards {
+  margin: 15rem 0;
+  width: 100%;
+  .cards__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .cards__item {
+    width: 35rem;
+  }
+  .cards__item {
+    padding-top: 13.6rem;
+    position: relative;
+    &:first-child::before {
+      content: url("../images/svg/phone.svg");
+    }
+    &:last-child::before {
+      content: url("../images/svg/skuter.svg");
+    }
+    &::before {
+      position: absolute;
+      content: url("../images/svg/girgitton.svg");
+      width: 100px;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      display: block;
+      height: 1.5rem;
+      background-color: #e5ecf4;
+      top: 41px;
+      right: 96%;
+      z-index: -1;
+    }
+  }
+  .wrap {
+    @include cards-h4;
+  }
+  .description {
+    @include cards-p;
+  }
+}
+
+.easy {
+  background-image: url(../images/svg/doira.svg);
+  background-repeat: no-repeat;
+  background-size: 7.5%, 105vh;
+  background-position: center;
+  background-position-x: 100%;
+  background-position-y: -4rem, 78%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+  .boxs {
+    width: 44.5rem;
+  }
+  .wrap {
+    @include easy-h2;
+  }
+  .decription {
+    @include easy-p;
+  }
+
+  .images {
+    img {
+      display: flex;
+      border-radius: 50%;
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+    .hover {
+      border-radius: 0;
+      top: 30rem;
+      right: 8em;
+      position: absolute;
+      width: 73.5rem;
+      height: 13.8rem;
+      border-radius: 0;
+    }
+  }
+}
+
+.sity {
+  background-image: url(../images/svg/left\ doira.svg);
+  background-repeat: no-repeat;
+  // background-size: 7.5%;
+  background-position: center;
+  background-position-x: -30rem;
+  background-position-y: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+  .boxs {
+    width: 44.5rem;
+  }
+  .wrap {
+    @include easy-h2;
+  }
+  .decription {
+    @include easy-p;
+  }
+
+  .images {
+    img {
+      border-radius: 50%;
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+    .hover {
+      border-radius: 0;
+      top: 1.1rem;
+      left: -11rem;
+      position: absolute;
+      width: 73.5rem;
+      height: 13.8rem;
+    }
+  }
+}
+
+.zero {
+  background-image: url(../images/svg/doira.svg);
+  background-repeat: no-repeat;
+  background-size: 7.5%;
+  background-position: center;
+  background-position-x: right;
+  background-position-y: -4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+  .boxs {
+    width: 44.5rem;
+  }
+  .wrap {
+    @include easy-h2;
+  }
+  .decription {
+    @include easy-p;
+  }
+
+  .images {
+    img {
+      border-radius: 50%;
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+    .hover {
+      border-radius: 0;
+      top: 8.7rem;
+      right: -27em;
+      position: absolute;
+      width: 73.5rem;
+      height: 13.8rem;
+      border-radius: 0;
+    }
+  }
+}
+
+.today {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-h1-dark-navy;
+  background-image: url(../images/svg/oval.svg), url(../images/svg/oval.svg),
+    url(../images/svg/oval2.svg);
+  background-repeat: no-repeat;
+  //   background-size: 34.7rem34.7rem;
+  background-position: 41.5%, 75%, right;
+  background-position-y: bottom;
+  padding: 10.2rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrap {
+    width: 41.5rem;
+    @include today-h2;
+  }
+  .blok {
+    display: flex;
+    gap: 1.8rem;
+  }
+  .block {
+    margin: 2.1rem 0;
+    height: 5.6rem;
+    display: flex;
+    gap: 1.147rem;
+    align-items: center;
+    text-align: left;
+    background: $color-logobg-gray;
+    border-radius: 0.4rem;
+    padding: 0 1.6rem 0.8rem 1.6rem;
+    img {
+      width: 2.45rem;
+      height: 2.45rem;
+      margin: 0;
+    }
+    span {
+      @include today;
+    }
+  }
+  .text {
+    @include today-text;
+  }
+}

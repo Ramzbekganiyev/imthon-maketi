@@ -1,0 +1,125 @@
+@mixin PM {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//All sections
+
+@mixin hero-h1 {
+  font-size: $h1-size;
+  line-height: $h1-height;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  letter-spacing: $h1-letter-spacing;
+  color: $color-white;
+  width: 50rem;
+}
+@mixin hero-p {
+  font-size: $p-size;
+  line-height: $p-height;
+  font-family: $font-lexend-deca;
+  font-weight: 400;
+  color: $color-white;
+}
+
+// cards
+@mixin cards-h4 {
+  font-size: $h4-size;
+  line-height: $h4-height;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  letter-spacing: $h4-letter-spacing;
+  color: $color-h1-dark-navy;
+  margin-bottom: 2.4rem;
+}
+@mixin cards-p {
+  font-size: $p-size;
+  line-height: $p-height;
+  font-family: $font-lexend-deca;
+  font-weight: 400;
+  color: $color-p-dim-grey;
+}
+
+// easy
+@mixin easy-h2 {
+  font-size: $h2-size;
+  line-height: $h2-height;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  letter-spacing: $h2-letter-spacing;
+  color: $color-h1-dark-navy;
+  margin-bottom: 2.4rem;
+}
+@mixin easy-p {
+  font-size: $p-size;
+  line-height: $p-height;
+  font-family: $font-lexend-deca;
+  font-weight: 400;
+  color: $color-p-dim-grey;
+  margin-bottom: 4rem;
+}
+
+@mixin today {
+  font-family: $font-space-mono;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.446429px;
+  color: $color-h1-dark-navy;
+}
+@mixin today-text {
+  font-family: $font-space-mono;
+  font-weight: 700;
+  font-size: $today-size;
+  line-height: $today-height;
+  letter-spacing: $today-letter-spacing;
+  color: $color-h1-dark-navy;
+}
+@mixin today-h2 {
+  font-size: $h2-size;
+  line-height: $h2-height;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  letter-spacing: $h2-letter-spacing;
+  color: $color-white;
+}
+
+@mixin our-h4 {
+  font-size: $h4-size;
+  line-height: $h4-height;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  letter-spacing: $h4-letter-spacing;
+  color: $color-h1-dark-navy;
+}
+@mixin global-p {
+  font-size: $p-size;
+  line-height: $p-height;
+  font-family: $font-lexend-deca;
+  font-weight: 400;
+  color: $color-p-dim-grey;
+}
+
+@mixin span {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  background-color: $color-oval-yellow;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+@mixin faq-h3 {
+  font-size: $h3-size;
+  line-height: $h3-height;
+  font-family: $font-space-mono;
+  font-weight: 700;
+  letter-spacing: $h3-letter-spacing;
+  color: $color-h1-dark-navy;
+}

@@ -1,0 +1,92 @@
+.careers {
+  display: flex;
+  background-image: url(../images/png/careers.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 12rem;
+  .container {
+    h1 {
+      padding: 7.2rem 0;
+      @include hero-h1;
+    }
+  }
+}
+.mission {
+  background-image: url(../images/svg/doira.svg);
+  background-repeat: no-repeat;
+  background-size: 15.5vh, 105vh;
+  background-position: center, center;
+  background-position-x: 100%;
+  background-position-y: -4rem, 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 12rem;
+  }
+  .boxs {
+    width: 44.5rem;
+  }
+  .wrap {
+    @include easy-h2;
+  }
+  .decription {
+    @include easy-p;
+  }
+  .images {
+    img {
+      border-radius: 50%;
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+    .hover {
+      bottom: 13.7rem;
+      right: 9.5rem;
+      position: absolute;
+      width: 73.5rem;
+      height: 13.7rem;
+      border-radius: 0;
+    }
+  }
+}
+
+.boxs {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+  .list {
+    width: 100%;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 3.2rem 4rem 3.5rem;
+      background: $color-snow;
+      margin-bottom: 2.4rem;
+    }
+  }
+  .box {
+    h4 {
+      margin-bottom: 0.8rem;
+      @include our-h4;
+    }
+    p {
+      @include global-p;
+    }
+    .btn {
+      // width: 18rem;
+      height: 5.3rem;
+      padding: 1.4rem 4.9rem;
+      text-align: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
